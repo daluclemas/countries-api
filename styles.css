@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.pad-1 {
+    padding: 1%;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.header-container {
+    text-align: center;
+    padding: 3%;
+}
+
+h3 {
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 3%;
+}
+
+input {
+    height: 120%;
+    border-radius: 5px;
+    margin-right: 2%;
+}
+
+input[placeholder] {
+    text-transform: capitalize;
+    padding: 1%;
+}
+
+button {
+    height: 120%;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+.card {
+    border: 1px hidden orange;
+    box-shadow: 2px 2px 2px grey;
+    grid-column: span 12;
+    margin: 2%;
+    margin-bottom: 3%;
+}
+
+.card img {
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 3%;
+    text-transform: capitalize;
+}
+
+@media (max-width: 760px) and (min-width: 400px) {
+    .card {
+        grid-column: span 6;
+    }
+}
+
+@media (min-width: 761px) {
+    .card {
+        grid-column: span 4;
+    }
+}
